@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./page/Home";
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import MovieDetails from "./page/MovieDetails";
 import { MovieProvider } from "./context/MovieContext";
 
@@ -8,12 +8,12 @@ function App() {
   return (
     <>
       <MovieProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/moviedetails/:id" element={<MovieDetails />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </MovieProvider>
     </>
   );
