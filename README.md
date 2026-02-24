@@ -1,16 +1,124 @@
-# React + Vite
+# 🎬 Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React movie browsing application built to practice and strengthen my understanding of:
 
-Currently, two official plugins are available:
+- ⚛️ React Hooks
+- 🌍 Context API
+- 🔁 useReducer
+- 🧭 React Router
+- 🗂 Clean project structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project focuses on scalable state management and component architecture rather than just UI.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔎 Browse movies
+- 📄 View movie details
+- 🌍 Global state management using Context API
+- 🔁 State logic handled with useReducer
+- 🧭 Routing with React Router
+- 🧱 Reusable components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- React (Vite)
+- React Router DOM
+- Context API
+- useReducer
+- JavaScript (ES6+)
+- CSS
+
+---
+
+## 📂 Project Structure
+
+
+src/
+│
+├── assets/
+├── component/
+│ ├── movieCard.jsx
+│ ├── movieList.jsx
+│ └── Navbar.jsx
+│
+├── context/
+│ ├── MovieContext.jsx
+│ └── MovieReducer.jsx
+│
+├── page/
+│ ├── Home.jsx
+│ └── MovieDetails.jsx
+│
+├── App.jsx
+├── main.jsx
+└── App.css
+
+
+---
+
+## 🧠 What I Practiced
+
+### 🔹 Context API
+Created a global store using `MovieContext` to avoid prop drilling and manage shared state across components.
+
+### 🔹 useReducer
+Implemented reducer logic inside `MovieReducer.jsx` to handle:
+- Fetching movies
+- Updating state
+- Managing loading and errors
+
+### 🔹 Routing
+Used `HashRouter`, `Routes`, and `Route` to create:
+- `/` → Home Page
+- `/moviedetails/:id` → Movie Details Page
+
+---
+
+## 💡 Why I Built This
+
+Instead of only following tutorials, I wanted to:
+
+- Practice real-world state architecture
+- Improve folder structure organization
+- Understand reducer-based state flow
+- Prepare for larger scale applications
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/movie-explorer.git
+
+Install dependencies:
+
+npm install
+
+Run the project:
+
+npm run dev
+📈 Future Improvements
+
+Add search functionality
+
+Add favorites feature
+
+Implement pagination
+
+Add API error handling improvements
+
+Improve UI/UX design
+
+Convert to TypeScript
+
+👨‍💻 Author
+
+Sujoy Ghosal
+Frontend Developer
+LinkedIn Profile
